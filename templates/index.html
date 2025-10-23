@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Home Control</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <h1>Smart Home Control</h1>
+    <p>Controla tu casa con tu voz o escribiendo un comando</p>
+  </header>
+
+  <main>
+    <section class="control">
+      <h2>Comandos</h2>
+      <p>Habla o escribe: “Encender luz”, “Apagar luz”, “Abrir puerta”, “Cerrar puerta”.</p>
+
+      <div class="actions">
+        <button id="voiceBtn">🎙️ Hablar</button>
+
+        <div class="input-area">
+          <input type="text" id="commandInput" placeholder="Escribe tu comando aquí...">
+          <button id="sendBtn">Enviar</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="status">
+      <h2>Estado</h2>
+      <p id="statusText">Esperando comando...</p>
+    </section>
+
+    <section class="simulacion">
+      <h2>💡 Simulación de dispositivos</h2>
+      <div class="device" id="luzSala">
+        <span>💡 Luz de la Sala:</span>
+        <strong class="estado">Apagada</strong>
+      </div>
+      <div class="device" id="puerta">
+        <span>🚪 Puerta Principal:</span>
+        <strong class="estado">Cerrada</strong>
+      </div>
+    </section>
+
+    <section class="conexion">
+      <h2>🔧 Conexión con Arduino</h2>
+      <p>Aquí se agregará la conexión real con el Arduino (WiFi o Bluetooth) cuando el módulo esté disponible.</p>
+      <button id="testConnection">Probar Conexión (Simulada)</button>
+      <p id="connectionStatus">Sin conexión</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 SmartHome by Luis Eduardo Torres Cuadros</p>
+  </footer>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
