@@ -1,6 +1,3 @@
-```text
-```text
-# filepath: c:\Users\Joaquin\Documents\Universidad\2025-2\IOT\WEBINTERNETCOSAS\requirements.txt
 Flask
 requests
 flask-cors
